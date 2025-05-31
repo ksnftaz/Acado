@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1000422404469",
+    "firebase_url": "https://clsrmggle-default-rtdb.firebaseio.com",
+    "project_id": "clsrmggle",
+    "storage_bucket": "clsrmggle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000422404469:android:9b39c0e68cd29dee64a33c",
+        "android_client_info": {
+          "package_name": "com.example.aclass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVBmO4YQC1CeZISmzcrRQNs9_MyWnDzQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000422404469:android:9995c10fd6a9f9e964a33c",
+        "android_client_info": {
+          "package_name": "com.example.classroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVBmO4YQC1CeZISmzcrRQNs9_MyWnDzQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
