@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Profile Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="24dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/class_header_gradient"
+                    android:padding="32dp">
+
+                    <!-- Decorative Background Elements -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
+
+                            <!-- Enhanced Profile Image -->
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <!-- Image Shadow Ring -->
+                                <View
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:background="@drawable/ic_profile"
+                                    android:layout_gravity="center" />
+
+                                <!-- Image Border Ring -->
+                                <View
+                                    android:layout_width="136dp"
+                                    android:layout_height="136dp"
+                                    android:background="@drawable/circle_dot"
+                                    android:layout_gravity="center" />
+
+                                <!-- Profile Image -->
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="128dp"
+                                    android:layout_height="128dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="64dp"
+                                    app:cardElevation="8dp">
+
+                                    <ImageView
+                                        android:id="@+id/profileImage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_profile_placeholder"
+                                        android:scaleType="centerCrop"
+                                        android:contentDescription="Profile Picture" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </FrameLayout>
+
+                            <!-- Profile Name with Edit Button -->
+                            <LinearLayout
+                                android:id="@+id/nameContainer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="24dp">
+
+                                <TextView
+                                    android:id="@+id/profileName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Your Name"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/white"
+                                    android:letterSpacing="0.01"
+                                    android:shadowColor="#40000000"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="4"
+                                    android:gravity="center" />
+
+
+
+                                <ImageView
+                                    android:id="@+id/editNameBtn"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginStart="12dp"
+                                    android:src="@drawable/ic_menu_edit"
+                                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                                    android:padding="4dp"
+                                    android:contentDescription="Edit Name"
+                                    android:alpha="0.8"
+                                    android:clickable="true"
+                                    android:focusable="true" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/profileEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="your@email.com"
+                                android:textSize="16sp"
+                                android:textColor="#E8F0FE"
+                                android:alpha="0.9"
+                                android:gravity="center" />
+
+                            <!-- Role Badge -->
+                            <TextView
+                                android:id="@+id/profileRole"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Your Role"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:paddingHorizontal="16dp"
+                                android:paddingVertical="6dp"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05"
+                                android:elevation="4dp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Actions Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E3F2FD"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="24dp">
+
+                    <!-- Section Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="20dp"
+                            android:background="@color/black"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile Actions"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#1F2937"
+                            android:letterSpacing="0.01" />
+
+                    </LinearLayout>
+
+                    <!-- Profile Picture Actions -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/changePicBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:text="Change Profile Picture"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="2dp"
+                            app:cornerRadius="16dp"
+                            app:icon="@android:drawable/ic_menu_camera"
+                            app:iconGravity="textStart"
+                            app:iconPadding="12dp"
+                            app:iconTint="@android:color/black"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_marginBottom="12dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/deletePicBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:text="Delete Picture"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="2dp"
+                            app:cornerRadius="16dp"
+                            app:icon="@android:drawable/ic_menu_delete"
+                            app:iconGravity="textStart"
+                            app:iconPadding="12dp"
+                            app:iconTint="@color/black"
+                            android:textColor="@color/black"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6"
+                        android:layout_marginVertical="20dp" />
+
+                    <!-- Logout Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="16dp"
+                            android:background="@color/black"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#1F2937"
+                            android:letterSpacing="0.01" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/logoutBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Log Out"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        style="@style/Widget.Material3.Button"
+                        app:backgroundTint="@color/black"
+                        app:cornerRadius="16dp"
+                        app:icon="@android:drawable/ic_lock_power_off"
+                        app:iconGravity="textStart"
+                        app:iconPadding="12dp"
+                        app:iconTint="#6B7280"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
