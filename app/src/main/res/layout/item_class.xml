@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="8dp"
+app:cardCornerRadius="12dp"
+app:cardElevation="2dp"
+android:foreground="?attr/selectableItemBackground"
+android:background="@color/white">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Course Icon -->
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/course_icon_background"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_book" />
+
+    </LinearLayout>
+
+    <!-- Course Info -->
+    <TextView
+        android:id="@+id/classNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Title"
+        android:textColor="#1F2937"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/teacherNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr. Sarah Johnson"
+        android:textSize="14sp"
+        android:textColor="#5F6368"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/classCodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code: 12345"/>
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course description"
+        android:textColor="#6B7280"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Students Count -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/ic_profile"-->
+<!--            android:layout_marginEnd="4dp" />-->
+
+        <TextView
+            android:id="@+id/studentsTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

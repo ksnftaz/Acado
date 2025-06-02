@@ -1,0 +1,20 @@
+<!-- In your styles.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Aclass" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Purple Status Bar -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.Aclass" parent="Base.Theme.Aclass" />
+
+    <!-- For Gradient Status Bar Effect -->
+    <style name="Theme.Aclass.GradientStatusBar" parent="Base.Theme.Aclass">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+</resources>
